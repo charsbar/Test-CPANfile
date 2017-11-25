@@ -91,7 +91,7 @@ It's ok if you list a module that is C<eval>ed in the code, or a module that doe
 
 =head1 FUNCTION
 
-=item cpanfile_has_all_used_modules()
+=head2 cpanfile_has_all_used_modules()
 
 You can pass an optional hash, which is passed to L<Perl::PrereqScanner::NotQuiteLite::App>'s constructer to change its behavior.
 
