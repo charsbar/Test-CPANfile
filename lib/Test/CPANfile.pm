@@ -131,13 +131,13 @@ Test::CPANfile - see if cpanfile lists every used modules
 
 This module tests if cpanfile lists every C<use>d modules or not.
 
-It's ok if you list a module that is C<eval>ed in the code, or a module that does not appear in the code, as C<requires>, but it complains if C<use>d module is listed as C<recommends> or C<suggests>.
+It's ok if you list a module that is C<eval>ed in the code, or a module that does not appear in the code, as C<requires>, but it complains if a C<use>d module is listed as C<recommends> or C<suggests>.
 
 =head1 FUNCTION
 
 =head2 cpanfile_has_all_used_modules()
 
-You can pass an optional hash, which is passed to L<Perl::PrereqScanner::NotQuiteLite::App>'s constructer to change its behavior.
+You can pass an optional hash, which is passed to L<Perl::PrereqScanner::NotQuiteLite::App>'s constructor to change its behavior.
 
 =head3 CPAN::Common::Index support
 
