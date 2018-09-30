@@ -12,6 +12,7 @@ our @EXPORT = qw/cpanfile_has_all_used_modules/;
 
 my %Phases = (
   runtime   => [qw/runtime/],
+  build     => [qw/runtime build/],
   test      => [qw/runtime build test/],
   configure => [qw/configure/],
 );
