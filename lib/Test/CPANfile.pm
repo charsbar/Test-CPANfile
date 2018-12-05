@@ -7,7 +7,7 @@ use Module::CPANfile;
 use Perl::PrereqScanner::NotQuiteLite::App;
 use Test::More;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 our @EXPORT = qw/cpanfile_has_all_used_modules/;
 
 my %Phases = (
