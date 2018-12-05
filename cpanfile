@@ -1,5 +1,6 @@
 requires 'Exporter', '5.57';
 requires 'Module::CPANfile';
+requires 'Module::CoreList', '2.99';
 requires 'Perl::PrereqScanner::NotQuiteLite', '0.9902';
 
 on configure => sub {
