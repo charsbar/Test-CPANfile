@@ -137,6 +137,15 @@ Test::CPANfile - see if cpanfile lists every used modules
     );
     done_testing;
     
+    # Or you can scan extra files
+    use Test::CPANfile;
+    use Test::More;
+    
+    cpanfile_has_all_used_modules(
+        lib => [glob 'extlib/*/lib'],
+    );
+    done_testing;
+    
 
 =head1 DESCRIPTION
 
@@ -168,6 +177,10 @@ Set a list of paths Test::CPANfile should ignore. This is useful when your distr
 =item ignore_re
 
 You can also specify a regexp instead of a list of paths. If this is set, C<ignore> options are ignored.
+
+=item libs
+
+If your distribution has an uncommon directory layout for some reasons, you can add extra directories to scan. This also might help when you have private modules that are not uploaded on the CPAN. Put them under C<extlib/> for example, and add the directory to C<libs>, then Test::CPANfile also looks under the directory, and excludes modules found there as a part of the distribution, at the cost of extra dependencies for those private modules. 
 
 =item recommends, suggests, develop
 
