@@ -1,5 +1,8 @@
 Revision history for Test-CPANfile
 
+0.06 2019/01/16
+  - silence warnings on failure
+
 0.05 2019/01/16
   - silence warnings on failure
 
