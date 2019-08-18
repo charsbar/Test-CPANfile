@@ -76,7 +76,7 @@ sub cpanfile_has_all_used_modules {
               $res ? $res->{uri} : undef;
             };
           }
-          ok($uri && $uri_map{$uri}, "$module ($phase $type) is declared" . ($uri_map{$uri} ? " (as $uri_map{$uri})" : ""));
+          ok($uri && $uri_map{$uri}, "$module ($phase $type) is declared" . ($uri && $uri_map{$uri} ? " (as $uri_map{$uri})" : ""));
         }
       }
     }
