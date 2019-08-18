@@ -11,6 +11,7 @@ our $VERSION = '0.06';
 our @EXPORT = qw/cpanfile_has_all_used_modules/;
 
 my %Phases = (
+  develop   => [qw/runtime build test configure develop/],
   runtime   => [qw/runtime/],
   build     => [qw/runtime build/],
   test      => [qw/runtime build test/],
