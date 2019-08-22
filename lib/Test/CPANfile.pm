@@ -40,7 +40,7 @@ sub cpanfile_has_all_used_modules {
 
   my $prereqs = $scanner->run;
 
-  my $index = $scanner->{index};
+  my $index = $scanner->index;
   my %uri_cache;
   for my $phase (sort $prereqs->phases) {
     for my $type (sort $prereqs->types_in($phase)) {
